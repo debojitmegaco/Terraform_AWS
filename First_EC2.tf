@@ -1,10 +1,12 @@
 /*
 # Configure the AWS Provider
+
 provider "aws" {
-  access_key = "AKIAITBCBRUNS2EQS7QQ"
-  secret_key = "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"
-  region     = "ap-south-1"
+  access_key = "${var.aws_access_key}"
+  secret_key = "${var.aws_access_key}"
+  region     = "${var.aws_region}"
 }
+
 
 
 
@@ -44,3 +46,4 @@ resource "aws_security_group" "allow_ssh" {
   }
 }
 */
+
