@@ -2,8 +2,8 @@
 
 # Create a web server
 resource "aws_instance" "SuseLinuxEc2" {
-  count         = "${var.Instance_count}"
-  ami           = "${lookup(var.aws_ami_map,var.aws_region)}" #Accessing Map Variable
+  count         = "${var.Instance_count}"                     #Create Loop varriable
+  ami           = "${lookup(var.aws_ami_map,var.aws_region)}" #Accessing Map Variable 
   instance_type = "${var.aws_instance_type}"
 
   #Insert the exisiting Key-Name present in account
