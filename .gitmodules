@@ -1,0 +1,3 @@
+[submodule "terraform-july"]
+	path = terraform-july
+	url = https://github.com/javahometech/terraform-july.git
